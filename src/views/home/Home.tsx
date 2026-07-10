@@ -1,9 +1,12 @@
 import './Home.css'
+import profile from '../../assets/profile.jpg';
 
 export default function Home() {
   return (
     <section className="home">
-      <h1>Home</h1>
+      <div className="text-center">
+        <img src={profile}/>
+      </div>
     </section>
   );
 }
