@@ -7,6 +7,7 @@ import Contact from '../views/contact/Contact';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Project from '../views/project/Project';
 
 const navLinkStyles = ({isActive}) => ({
   color: 'white',
@@ -46,6 +47,7 @@ export default function Layout() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/project/:id" element={<Project/> }/>
               <Route path="/certificates" element={<Certificates />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
